@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaturanActivity"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan"
+            android:textSize="10pt"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ganti Password"
+            android:textStyle="bold"
+            android:textSize="9pt"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Saat ini"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/setting_pass_lama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorLink="#9C27B0"
+            android:textSize="8pt" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password Baru"
+            android:textStyle="bold"
+            android:textSize="8pt"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/setting_pass_baru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorLink="#9C27B0"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/setting_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#2a6f97"
+
+            android:text="Simpan" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#c9184a"
+            android:onClick="toHome"
+            android:text="Kembali" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="43dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="241dp"
+                android:layout_height="wrap_content"
+                android:text="About this App."
+                android:textColor="@color/black"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Aplikasi ini dibuat oleh  :\nNama\t\t\t\t\t: Izmir Ta'is Khasna Lugazi\nNIM\t\t\t\t\t\t : 1741720180\nTanggal\t\t : 5 November 2021"
+                android:textColor="@color/black"
+                android:textSize="8pt" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

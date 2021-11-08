@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Pemasukan"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="10pt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Tanggal:"
+        android:textColor="@color/black"
+        android:textColorLink="#9C27B0"
+        android:textSize="8pt"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/pemasukan_ikon"
+            android:layout_alignParentRight="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_date"/>
+
+        <EditText
+            android:id="@+id/pemasukan_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:hint="tttt-bb-hh"
+            android:textColor="@color/black"
+            android:textSize="8pt" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Nominal:"
+        android:textSize="8pt"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp."
+            android:textColor="@color/black"
+            android:textSize="8pt"/>
+
+        <EditText
+            android:id="@+id/pemasukan_nominal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:textColor="@color/black"
+            android:textColorLink="#b7b7a4"
+            android:textSize="8pt" />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Keterangan:"
+        android:textSize="8pt"/>
+
+    <EditText
+        android:id="@+id/pemasukan_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:textColorLink="#9C27B0"
+        android:textSize="8pt" />
+
+    <Button
+        android:id="@+id/pemasukan_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#2a6f97"
+        android:text="Simpan" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#c9184a"
+        android:onClick="toHome"
+        android:text="Kembali" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginActivity"
+    android:orientation="vertical">
+    android:background="#CDBCBC"
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="UangKu"
+        android:textAlignment="center"
+        android:textColor="#0077b6"
+        android:textSize="16pt"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/daftar_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorLink="#9C27B0" />
+
+    <EditText
+        android:id="@+id/daftar_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorLink="#9C27B0" />
+
+    <EditText
+        android:id="@+id/daftar_ulangi_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Ulangi Password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorLink="#9C27B0" />
+    <Button
+        android:id="@+id/daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:padding="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#90e0ef"
+        />
+
+    <TextView
+        android:id="@+id/daftar_kliklogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Login Disini!"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+</LinearLayout>

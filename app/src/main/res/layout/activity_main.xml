@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="MainActivity"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp">
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rangkuman Bulan Ini"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:id="@+id/total_pemasukan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pemasukan: "
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/total_pengeluaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengeluaran: "
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/line"
+        android:minHeight="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:onClick="toIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="20dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/income"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Pemasukan"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="toOutcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="20dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/outcome"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Pengeluaran"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:onClick="toCashflow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="20dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/perhitungan"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Cash Flow"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:onClick="toSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <ImageView
+                android:padding="20dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/setting"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pengaturan"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
